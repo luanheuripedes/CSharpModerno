@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -9,7 +10,7 @@ namespace DotNetLive1.Entities
 {
     public class Student
     {
-        public string FirstName { get; set; }
+        public required string FirstName { get; set; }
         public string? LastName { get; set; }
         public DateTime? DateOfBirth { get; set; }
         public decimal? Score { get; set; }
@@ -22,6 +23,7 @@ namespace DotNetLive1.Entities
             StudentStatus = StudentStatus.Active;
         }
 
+        [SetsRequiredMembers]
         public Student(string firstName, string? lastName, DateTime? dateOfBirth, decimal? score, Address? address, StudentStatus studentStatus)
         {
             FirstName = firstName;
