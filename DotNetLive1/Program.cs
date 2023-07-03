@@ -48,6 +48,16 @@ namespace DotNetLive1
 
 
             //Records
+
+
+
+
+
+            //
+            foreach (var item in students)
+            {
+                item.PrintInfo();
+            }
         }
     }
 }

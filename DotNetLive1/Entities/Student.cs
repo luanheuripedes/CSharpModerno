@@ -74,6 +74,8 @@ namespace DotNetLive1.Entities
             Console.WriteLine($"{result}");
             Console.WriteLine($"{result2}");
 
+            using var streamWriter = new StreamWriter("student_log.txt", true);
+            streamWriter.WriteLine($"{fullName} - {score} - {address}");
         }
     }
 }
