@@ -50,14 +50,19 @@ namespace DotNetLive1
             //Records
 
 
+            //Null Reference Types
+            student1.SetLastName(student1.LastName);
+            student1.SetLastName(student2.LastName);
 
+            var firstName1 = student1.FirstName.Length;
+            var lastName1 = student1.FirstName.Length;
+            var lastName2 = student2.FirstName.Length;
 
+            Student? luan = students.SingleOrDefault(s => s.FirstName == "Luan");
+            Console.WriteLine(value: luan.FirstName);
 
-            //
-            foreach (var item in students)
-            {
-                item.PrintInfo();
-            }
+            student1.PrintInfo();
+           
         }
     }
 }

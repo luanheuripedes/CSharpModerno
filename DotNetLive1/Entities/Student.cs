@@ -18,6 +18,7 @@ namespace DotNetLive1.Entities
 
         public Student()
         {
+            FirstName = String.Empty;
             StudentStatus = StudentStatus.Active;
         }
 
@@ -35,6 +36,11 @@ namespace DotNetLive1.Entities
         {
             Score = info.Score;
             Address = info.Address;
+        }
+
+        public void SetLastName(string lastName)
+        {
+
         }
 
         public (string Name, decimal Score, string Address) GetInfo()
