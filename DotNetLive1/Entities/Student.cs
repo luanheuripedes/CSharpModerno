@@ -56,6 +56,24 @@ namespace DotNetLive1.Entities
             Console.WriteLine(fullName);
             Console.WriteLine(score);
             Console.WriteLine(address);
+
+            var result = Score switch
+            {
+                >= 7 => "Aprovado",
+                >= 3 and < 7 => "Recuperação",
+                _ => "Reprovado"
+            };
+
+            string result2 = this switch
+            {
+                { Score: >= 7, StudentStatus: StudentStatus.Active } => "Aprovado",
+                { Score: >=3 and < 7, StudentStatus: StudentStatus.Active} => "Reprovado",
+                _ => "Reprovado"
+            };
+
+            Console.WriteLine($"{result}");
+            Console.WriteLine($"{result2}");
+
         }
     }
 }

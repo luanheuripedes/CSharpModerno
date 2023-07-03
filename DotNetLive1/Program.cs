@@ -45,6 +45,9 @@ namespace DotNetLive1
             {
                 Console.WriteLine($"{firstname}, {nota}");
             }
+
+
+            //Records
         }
     }
 }
