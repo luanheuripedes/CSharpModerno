@@ -16,12 +16,12 @@ namespace DotNetLive1
                 DateOfBirth = new DateTime(1997, 02, 24),
                 Score = 7.5m,
                 Address = new Address
-                {
-                    Street = "Rua Sebastião Martins Gomes",
-                    State = "MG",
-                    ZipCode = "36900-000",
-                    City = "Manhuaçu"
-                },
+                (
+                    "Rua Sebastião Martins Gomes",
+                    "Manhuaçu",
+                    "MG",
+                    "36900-000"
+                ),
             };
 
             var students = new List<Student> { student1, student2 };
@@ -48,7 +48,7 @@ namespace DotNetLive1
 
 
             //Records
-
+            Console.WriteLine($"Records {student1.Address == student2.Address}");
 
             //Null Reference Types
             student1.SetLastName(student1.LastName);
@@ -62,7 +62,7 @@ namespace DotNetLive1
             Console.WriteLine(value: luan.FirstName);
 
             student1.PrintInfo();
-           
+
         }
     }
 }
