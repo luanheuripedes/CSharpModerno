@@ -53,9 +53,9 @@ namespace DotNetLive1.Entities
             var score = $"Score: {Score?.ToString("0.00") ?? "N/A"}";
             var address = Address?.GetFullAddress() ?? "N/A";
 
-            Console.WriteLine(fullName);
-            Console.WriteLine(score);
-            Console.WriteLine(address);
+            Console.WriteLine(value: fullName);
+            Console.WriteLine($"{score}");
+            Console.WriteLine(value: address);
 
             var result = Score switch
             {
@@ -67,7 +67,7 @@ namespace DotNetLive1.Entities
             string result2 = this switch
             {
                 { Score: >= 7, StudentStatus: StudentStatus.Active } => "Aprovado",
-                { Score: >=3 and < 7, StudentStatus: StudentStatus.Active} => "Reprovado",
+                { Score: >=3 and < 7, StudentStatus: StudentStatus.Active} => "Recuperação",
                 _ => "Reprovado"
             };
 
