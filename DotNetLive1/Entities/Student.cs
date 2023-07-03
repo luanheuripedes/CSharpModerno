@@ -42,7 +42,7 @@ namespace DotNetLive1.Entities
 
         public void SetLastName(string lastName)
         {
-
+            this.LastName = LastName
         }
 
         public (string Name, decimal Score, string Address) GetInfo()
