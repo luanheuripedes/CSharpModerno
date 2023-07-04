@@ -6,7 +6,7 @@ O aula abrange conceitos avançados da linguagem C# e fornece uma visão abrange
 O aula de C# Moderno, ministrado pelo Professor Luis Dev, é um recurso para desenvolvedores que desejam conhecer algums recursos novos da linguagem C#.
 Este repositório foi criado por mim para praticar e aplicar os conceitos aprendidos durante a aula.
 
-##Conteúdo
+## Conteúdo
 Nesta aula foram apresentados alguns recursos novos da linguagem e alguns conceitos que não são tão utilizados, mas que são de grande ajuda, como:
 * Tuples (C#7)
 * Expressões Switch (C#8)
